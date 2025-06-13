@@ -658,7 +658,7 @@
  
          db.collection("surveys").add(surveyData)
            .then(() => {
-             console.log("설문 응답이 Firestore에 저장되었습니다.");
+             console.log("설문 응답이 Firestore에 저장되었습니다.");})
 
             const formBody = new URLSearchParams(surveyData).toString();
 
