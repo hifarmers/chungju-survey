@@ -628,7 +628,8 @@
              fetch(scriptURL, {
                 method: 'POST',
                  body: JSON.stringify(currentSurveyAnswers),
-                 headers: { 'Content-Type': 'application/json' }
+                 headers: { 'Content-Type': 'application/json' },
+                 mode: 'cors'
              })
              .then(response => {
                  if (!response.ok) throw new Error('전송 실패');
