@@ -313,6 +313,15 @@
         // Firebase 초기화
         firebase.initializeApp(firebaseConfig);
         const db = firebase.firestore();
+
+        db.collection("surveys")
+        .orderBy("timestamp", "asc")  // timestamp 기준 오름차순 정렬
+        .get()
+        .then(querySnapshot => {
+          querySnapshot.forEach(doc => {
+            console.log(doc.id, doc.data());
+          });
+        });
         
         // Survey data structure
         const questions = [
