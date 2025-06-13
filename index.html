@@ -661,7 +661,7 @@
              console.log("설문 응답이 Firestore에 저장되었습니다.");
 
              // 1. Firebase 저장 성공 후 구글 시트 전송
-             fetch("https://script.google.com/macros/s/AKfycb.../exec", {  // 실제 웹앱 URL로 변경
+             fetch("https://script.google.com/macros/s/AKfycbzka1loWTkqcmZmzT2rNQhLzvsYPlXKaizATUCY0F8zlq3vS5XdOM5dUqoLWFrmS8KP0g/exec", {  // 실제 웹앱 URL로 변경
               method: "POST",
               body: JSON.stringify(surveyData),
               headers: {
