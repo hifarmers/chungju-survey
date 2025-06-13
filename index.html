@@ -628,7 +628,7 @@
              fetch(scriptURL, {
                 method: 'POST',
                  body: JSON.stringify(currentSurveyAnswers),
-                 headers: { 'Content-Type': 'text/plain' }
+                 headers: { 'Content-Type': 'application/json' }
              })
              .then(response => {
                  if (!response.ok) throw new Error('전송 실패');
